@@ -35,7 +35,7 @@
                 android:layout_marginHorizontal="4dp"
                 android:fontFamily="@font/playfair_display_bold"
                 android:text="article"
-                android:textColor="#999999"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -56,7 +56,8 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#EEEEEE"
+        android:background="@android:color/darker_gray"
+        android:alpha="0.7"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout" />
 
     <androidx.recyclerview.widget.RecyclerView

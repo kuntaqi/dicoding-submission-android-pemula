@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Submission Android Pemula</string>
+    <string name="todo">TODO</string>
+    <string name="detailview_judul">Detailview Judul</string>
+    <string name="establishing_a_creative_space_is_a_creative_process_in_itself_it_is_a_process_that_you_should_give_thought_to_invest_in_and_execute_to_your_liking_lorem_ipsum_dolor_sit_amet_adipiscing_elit">Establishing a creative space is a creative process in itself. It is a process that you should give thought to, invest in and execute to your liking. LOrem ipsum dolor sit amet adipiscing elit</string>
+    <string name="january_19_2022">January 19, 2022</string>
+    <string name="building_a_creative_space_studio_tour_2022">Building a Creative Space Studio Tour 2022</string>
 </resources>

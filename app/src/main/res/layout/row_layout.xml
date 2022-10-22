@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -14,62 +15,33 @@
 
         <TextView
             android:id="@+id/article_title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/playfair_display_bold"
             android:text="Building a Creative Space \nStudio Tour 2022"
-            android:textColor="#333333"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/line1"
+        <TextView
+            android:id="@+id/article_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/article_title">
+            android:text="@string/january_19_2022"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/article_title"/>
 
-
-            <TextView
-                android:id="@+id/article_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="January 19, 2022"
-                android:textColor="#999999"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/article_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="08.00 AM"
-                android:textColor="#999999"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card"
+        <ImageView
+            android:id="@+id/article_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintTop_toBottomOf="@id/line1">
-
-            <ImageView
-                android:id="@+id/article_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sejumlah_warga_mengurus_proses_perceraian_di_pengadilan_agama_jakarta__161003162539_371">
-
-            </ImageView>
-
-        </androidx.cardview.widget.CardView>
+            android:scaleType="centerCrop"
+            android:src="@drawable/sejumlah_warga_mengurus_proses_perceraian_di_pengadilan_agama_jakarta__161003162539_371"
+            app:layout_constraintTop_toBottomOf="@id/article_date"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/article_desc"
@@ -79,9 +51,8 @@
             android:lineSpacingExtra="3dp"
             android:maxLines="3"
             android:ellipsize="end"
-            android:text="Establishing a creative space is a creative process in itself. It is a process that you should give thought to, invest in and execute to your liking. LOrem ipsum dolor sit amet adipiscing elit"
-            android:textColor="#666666"
+            android:text="@string/establishing_a_creative_space_is_a_creative_process_in_itself_it_is_a_process_that_you_should_give_thought_to_invest_in_and_execute_to_your_liking_lorem_ipsum_dolor_sit_amet_adipiscing_elit"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/card" />
+            app:layout_constraintTop_toBottomOf="@id/article_image" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
