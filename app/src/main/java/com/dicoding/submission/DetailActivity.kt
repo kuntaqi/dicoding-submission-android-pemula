@@ -26,5 +26,9 @@ class DetailActivity : AppCompatActivity() {
             crossfade(true)
             transformations(RoundedCornersTransformation(10f))
         }
+
+        binding.backArrow.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
     }
 }
